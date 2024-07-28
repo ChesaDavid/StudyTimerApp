@@ -53,6 +53,9 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
 }
 dependencies{
+    implementation(libs.recyclerview)
+    implementation(libs.lifecycle.livedata.ktx)
+    implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.firebase.auth)
     implementation(libs.firebase.database)
 

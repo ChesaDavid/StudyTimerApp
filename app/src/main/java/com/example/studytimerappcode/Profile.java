@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +26,7 @@ public class Profile extends AppCompatActivity {
     FirebaseAuth mAuth;
     TextView name;
     TextView logout;
+    private ImageView calendar,todo,study,profileImg,change,stats;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +37,45 @@ public class Profile extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        calendar = findViewById(R.id.calendar);
+        todo = findViewById(R.id.todo);
+        study = findViewById(R.id.study);
+        profileImg = findViewById(R.id.profileImg);
+//        change = findViewById(R.id.change);
+        stats = findViewById(R.id.statistics);
         mAuth = FirebaseAuth.getInstance();
+        calendar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Calendar.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        todo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),ToDo.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        study.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Study.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        stats.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Statistics.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         name = findViewById(R.id.profile);
         logout = findViewById(R.id.button);
         user = mAuth.getCurrentUser();

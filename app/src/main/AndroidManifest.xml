@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.studytimerappcode">
 
     <application
@@ -9,6 +10,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.StudyTimerAppCode">
+        <activity
+            android:name=".Statistics"
+            android:exported="false" />
+        <activity
+            android:name=".Calendar"
+            android:exported="false" />
+        <activity
+            android:name=".Study"
+            android:exported="false" />
+        <activity
+            android:name=".ToDo"
+            android:exported="false"
+            android:label="@string/title_activity_to_do"
+            android:resizeableActivity="true"
+            android:theme="@style/Base.Theme.StudyTimerAppCode.NoActionBar"
+            tools:targetApi="24" />
         <activity
             android:name=".Profile"
             android:exported="false" />

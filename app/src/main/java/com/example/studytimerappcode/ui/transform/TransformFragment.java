@@ -99,7 +99,7 @@ public class TransformFragment extends Fragment {
             holder.textView.setText(getItem(position));
             holder.imageView.setImageDrawable(
                     ResourcesCompat.getDrawable(holder.imageView.getResources(),
-                            drawables.get(position),
+                    drawables.get(position),
                             null));
         }
     }

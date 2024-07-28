@@ -8,7 +8,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class ToDo extends AppCompatActivity {
+    private FirebaseAuth mAuth;
+    private FirebaseUser user;
+    private FirebaseDatabase data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
