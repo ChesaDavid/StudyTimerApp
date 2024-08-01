@@ -2,6 +2,11 @@
 
 In today's fast-paced world, staying focused and productive is a challenge for many. The Pomodoro Technique, a time management method that involves working in short, focused intervals followed by short breaks, has proven to be highly effective in enhancing concentration and productivity. However, manually tracking these intervals can be cumbersome. This is where **StudyTimeApp** comes in.
 
+### Why did I start this project
+
+A little inside from the backstory of why did I start this project to begin with. One of my intentions with this specifical project was to develop an app from beginning to end and to be linked with a website and maybe publishing it. After all this was in mind the advancements in knowledge of android studio, java as a whole and how a project it's integrated.
+
+
 ## The Need for StudyTimeApp
 
 With the increasing distractions from digital devices and social media, many people find it hard to maintain focus during study or work sessions. Traditional methods of studying, without structured breaks, often lead to burnout and decreased efficiency. The StudyTimeApp addresses these challenges by providing a simple and effective way to implement the Pomodoro Technique. It helps users:
