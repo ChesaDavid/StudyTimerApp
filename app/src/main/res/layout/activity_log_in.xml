@@ -7,7 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".LogIn"
     android:background="@color/red_800">
-
+    <data>
+        <variable
+            name="activityLoginBinding"
+            type="com.example.studytimerappcode.databinding.ActivityLoginBinding" />
+    </data>
     <TextView
         android:id="@+id/textView3"
         android:layout_width="210dp"

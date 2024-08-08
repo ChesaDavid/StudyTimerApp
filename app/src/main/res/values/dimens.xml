@@ -9,4 +9,6 @@
     <dimen name="reflow_text_block_horizontal_gap">8dp</dimen>
     <dimen name="reflow_text_title_size">22sp</dimen>
     <dimen name="reflow_text_description_size">13sp</dimen>
+    <dimen name="activity_vertical_margin">12sp</dimen>
+    <dimen name="activity_horizontal_margin">20sp</dimen>
 </resources>
